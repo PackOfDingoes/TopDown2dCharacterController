@@ -20,7 +20,7 @@ public class CharacterController : MonoBehaviour
     {
         if (Input.GetButtonDown("Right"))
         {
-
+            
         }
 
     }
