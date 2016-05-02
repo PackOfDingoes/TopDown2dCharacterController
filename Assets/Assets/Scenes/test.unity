@@ -227,7 +227,7 @@ MonoBehaviour:
   collisionCheckerObject: {fileID: 1406264909}
   ObstacleTag: Obstacle
   gridSize: 1
-  speed: 4
+  speed: 1
 --- !u!23 &241803635
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -501,6 +501,7 @@ GameObject:
   - 92: {fileID: 1276144788}
   - 124: {fileID: 1276144787}
   - 81: {fileID: 1276144786}
+  - 114: {fileID: 1276144791}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -575,6 +576,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1276144791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1276144785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309b97fa531a6014dbd631ed782cf84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1339521975
 GameObject:
   m_ObjectHideFlags: 0
