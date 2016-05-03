@@ -8,13 +8,6 @@ public class ItemsIndex : IEquatable<ItemsIndex>
 	public int IDItem{get; set;}
 	public string nameItem{get; set;}
 
-	public enum ItemType
-	{
-		Melee,
-		Ranged,
-		Armour
-	}
-
 	public override string ToString()
 	{
 		return "Item ID: " + IDItem + "\n Name: " + nameItem;

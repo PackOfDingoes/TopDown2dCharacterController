@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
-public class TopDown2DCharacterController : MonoBehaviour
+public class PlayerController: MonoBehaviour
 {
 //	private Rigidbody2D rb2d;
 
@@ -19,21 +21,84 @@ public class TopDown2DCharacterController : MonoBehaviour
 	private bool isMoving = false;
 	private bool canMove = true;
 
+    public int currentHP;
+    private int maxHP;
+
+    public int currentLvl = 1;
+    public float expTotal = 0f;
+    public float expToNextLvl = 100;
+    private int expSinceLevel = 0;
+    public float expModMod = 0.9f;
+    public float expModToNextLvl = 1f;
+
+    public Dictionary<string, int> attributes = new Dictionary<string, int>();
+    public string[] stats = new string[6] { "str", "dex", "con", "int", "wis", "cha" };
+
 	void Awake ()
     {
-//		rb2d = GetComponent<Rigidbody2D>();
 		collisionChecker = collisionCheckerObject.GetComponent<CollisionChecker>();
 		currentPos = this.transform.position;
-	}
+        StatStart();
+    }
+
+    void Start ()
+    {
+
+    }
 
 	void Update ()
     {
-		
+        if (Input.GetKeyDown("1"))
+        {
+            ExperienceChange(110);
+        }
 	}
 
     void FixedUpdate ()
     {
 		Move();
+    }
+
+    void StatStart()
+    {
+        for (int i = 0; i < stats.Length; i++)
+        {
+            attributes.Add(stats[i], 8);
+        }
+
+        maxHP = attributes["con"] * 2;
+        currentHP = maxHP;
+    }
+
+    public void ExperienceChange(int change)
+    {
+        expTotal += change;
+        expSinceLevel += change;
+
+        if (expSinceLevel >= expToNextLvl)
+        {
+            LevelUp(expSinceLevel - Convert.ToInt16(expToNextLvl));
+        }
+
+        Debug.Log("Level: " + currentLvl + "\n Exp Total: " + expTotal);
+        Debug.Log("Exp until Lvl " + (currentLvl + 1) + " " + expSinceLevel + "/" + expToNextLvl);
+    }
+
+    public void LevelUp(int remainingExp = 0)
+    {
+        currentLvl++;
+        expSinceLevel = 0 + remainingExp;
+        expModToNextLvl = expModToNextLvl * expModMod;
+        expToNextLvl = expToNextLvl * (1+expModToNextLvl);
+        expToNextLvl = Convert.ToInt16(expToNextLvl);
+    }
+
+    public void StatChange(string statToChange = null, int changeAmount = 0)
+    {
+        if (statToChange != null)
+        {
+            attributes[statToChange] += changeAmount;
+        }
     }
 
 	void Move ()
