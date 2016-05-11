@@ -19,7 +19,7 @@ public class PlayerController: MonoBehaviour
 	public float gridSize = 1.0f;
 	public float speed = 2f;
 	private bool isMoving = false;
-	private bool canMove = true;
+	public bool canMove = true;
 
     public int currentHP;
     private int maxHP;
@@ -50,13 +50,16 @@ public class PlayerController: MonoBehaviour
     {
         if (Input.GetKeyDown("1"))
         {
-            ExperienceChange(110);
+            ExperienceChange(55);
         }
 	}
 
     void FixedUpdate ()
     {
-		Move();
+		if (canMove == true)
+		{
+			Move();
+		}
     }
 
     void StatStart()
