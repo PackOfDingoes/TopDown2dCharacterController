@@ -12,24 +12,23 @@ public class BaseMeleeWeapon : BaseWeapon //BaseMeleeWeapon < BaseWeapon < BaseI
 		AXE,
 		MACE,
 		SPEAR,
-		POLEARM,
 		DAGGER,
 		STAFF,
 		WAND
 	}
 	private MeleeWeaponTypes meleeWeaponType;
 
-	private bool MeleeWeaponHasReach
+    public bool MeleeWeaponHasReach
 	{
 		get{return meleeWeaponHasReach;}
 		set{meleeWeaponHasReach = value;}
 	}
-	private bool MeleeWeaponIsHeavy
+    public bool MeleeWeaponIsHeavy
 	{
 		get{return meleeWeaponIsHeavy;}
 		set{meleeWeaponIsHeavy = value;}
 	}
-	private MeleeWeaponTypes MeleeWeaponType
+    public MeleeWeaponTypes MeleeWeaponType
 	{
 		get{return meleeWeaponType;}
 		set{meleeWeaponType = value;}

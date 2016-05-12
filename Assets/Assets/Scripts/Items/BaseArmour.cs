@@ -4,7 +4,6 @@ using System.Collections;
 public class BaseArmour : BaseItem  //BaseArmour < BaseItem
 {
 	private int armourDefense;
-	private int armourBonusHealth;
 
 	public enum ArmourTypes
 	{
@@ -14,4 +13,17 @@ public class BaseArmour : BaseItem  //BaseArmour < BaseItem
 		PANTS,
 		BOOTS
 	}
+
+    private ArmourTypes armourTypes;
+
+    public int ArmourDefense
+    {
+        get { return armourDefense; }
+        set { armourDefense = value; }
+    }
+    public ArmourTypes ArmourType
+    {
+        get { return armourTypes; }
+        set { armourTypes = value; }
+    }
 }

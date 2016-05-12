@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
 
 public class BaseItem
 {
+    public BaseItem() {}
 //	ALL ITEMS
 	private int itemID;
 	private string itemName;
@@ -26,11 +29,31 @@ public class BaseItem
 		POTION
 	}
 	private ItemTypes itemType;
+
+    public BaseItem (Dictionary<string,string> itemsDictionary)
+    {
+        itemID = int.Parse(itemsDictionary["ItemID"]);
+        itemName = itemsDictionary["ItemName"];
+        itemDescription = itemsDictionary["ItemDescription"];
+        itemID = int.Parse(itemsDictionary["ItemID"]);
+        itemGoldValue = int.Parse(itemsDictionary["ItemGoldValue"]);
+        itemLvlRequirement = int.Parse(itemsDictionary["ItemLvlReq"]);
+        itemStrRequirement = int.Parse(itemsDictionary["ItemStrReq"]);
+        itemBonusStr = int.Parse(itemsDictionary["ItemBonusStr"]);
+        itemBonusStr = int.Parse(itemsDictionary["ItemBonusDex"]);
+        itemBonusStr = int.Parse(itemsDictionary["ItemBonusCon"]);
+        itemBonusStr = int.Parse(itemsDictionary["ItemBonusInt"]);
+        itemBonusStr = int.Parse(itemsDictionary["ItemBonusWis"]);
+        itemBonusStr = int.Parse(itemsDictionary["ItemBonusCha"]);
+        itemID = int.Parse(itemsDictionary["ItemID"]);
+        itemType = (ItemTypes)System.Enum.Parse(typeof(BaseItem.ItemTypes), itemsDictionary["ItemType"].ToString());
+    }
+
 //	START GET AND SETS
 	public int ItemID
 	{
-		get{return ItemID;}
-		set{ItemID = value;}
+		get{return itemID;}
+		set{itemID = value;}
 	}
 	public string ItemName
 	{

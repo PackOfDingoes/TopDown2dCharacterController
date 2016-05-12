@@ -6,7 +6,14 @@ public class BaseWeapon : BaseItem //BaseWeapon < BaseItem
 	private int weaponDamage;
 	private float weaponAttackSpeed;
 	private bool weaponIsTwoHanded;
-	private string weaponDamageType;
+
+	public enum WeaponDamageTypes
+    {
+        SLASH,
+        PIERCE,
+        BLUNT
+    }
+    private WeaponDamageTypes weaponDamageType;
 
 	public enum WeaponTypes
 	{
@@ -15,28 +22,29 @@ public class BaseWeapon : BaseItem //BaseWeapon < BaseItem
 	}
 	private WeaponTypes weaponType;
 
-	private int WeaponDamage
+    public int WeaponDamage
 	{
 		get{return weaponDamage;}
 		set{weaponDamage = value;}
 	}
-	private float WeaponAttackSpeed
+    public float WeaponAttackSpeed
 	{
 		get{return weaponAttackSpeed;}
 		set{weaponAttackSpeed = value;}
 	}
-	private bool WeaponIsTwoHanded
+    public bool WeaponIsTwoHanded
 	{
 		get{return weaponIsTwoHanded;}
 		set{weaponIsTwoHanded = value;}
 	}
-	private string WeaponDamageType
-	{
-		get{return weaponDamageType;}
-		set{weaponDamageType = value;}
-	}
 
-	private WeaponTypes WeaponType
+    public WeaponDamageTypes WeaponDamageType
+    {
+        get{return weaponDamageType;}
+        set{weaponDamageType = value; }
+    }
+
+    public WeaponTypes WeaponType
 	{
 		get{return weaponType;}
 		set{weaponType = value;}
