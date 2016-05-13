@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="ItemDatabase.xsd" generated="2016-05-13T17:06:24">
+<ItemDatabase>
+<ID>1</ID>
+<Name>Rusty Sword</Name>
+<Description>An old rusty sword</Description>
+<GoldValue>10</GoldValue>
+<Type>WEAPON</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>SWORD</SubType>
+<Damage>5</Damage>
+<AttackSpeed>1</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>0</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>2</ID>
+<Name>Rusty Mace</Name>
+<Description>An old rust mace</Description>
+<GoldValue>10</GoldValue>
+<Type>WEAPON</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>MACE</SubType>
+<Damage>10</Damage>
+<AttackSpeed>0.5</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>1</Heavy>
+<Defense>0</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>3</ID>
+<Name>Rusty Spear</Name>
+<Description>An old rusty spear</Description>
+<GoldValue>10</GoldValue>
+<Type>WEAPON</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>SPEAR</SubType>
+<Damage>5</Damage>
+<AttackSpeed>0.7</AttackSpeed>
+<TwoHanded>1</TwoHanded>
+<Reach>1</Reach>
+<Heavy>0</Heavy>
+<Defense>0</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>4</ID>
+<Name>Thick Red Goop</Name>
+<Description>A very crude HP potion</Description>
+<GoldValue>25</GoldValue>
+<Type>POTION</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>HP</SubType>
+<Damage>0</Damage>
+<AttackSpeed>0</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>0</Defense>
+<HPRestore>25</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>5</ID>
+<Name>Thick Blue Goop</Name>
+<Description>A very crude MP potion</Description>
+<GoldValue>25</GoldValue>
+<Type>POTION</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>MP</SubType>
+<Damage>0</Damage>
+<AttackSpeed>0</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>0</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>10</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>6</ID>
+<Name>Hide Helmet</Name>
+<Description>A helmet made of hide</Description>
+<GoldValue>5</GoldValue>
+<Type>ARMOUR</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>HELMET</SubType>
+<Damage>0</Damage>
+<AttackSpeed>0</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>5</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>7</ID>
+<Name>Hide Chest</Name>
+<Description>A chest piece made of hide</Description>
+<GoldValue>5</GoldValue>
+<Type>ARMOUR</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>CHEST</SubType>
+<Damage>0</Damage>
+<AttackSpeed>0</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>15</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>8</ID>
+<Name>Hide Gloves</Name>
+<Description>A pair of gloves made of hide</Description>
+<GoldValue>5</GoldValue>
+<Type>ARMOUR</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>GLOVES</SubType>
+<Damage>0</Damage>
+<AttackSpeed>0</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>2</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>9</ID>
+<Name>Hide Pants</Name>
+<Description>A pair of pants made of hide</Description>
+<GoldValue>5</GoldValue>
+<Type>ARMOUR</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>PANTS</SubType>
+<Damage>0</Damage>
+<AttackSpeed>0</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>10</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>10</ID>
+<Name>Hide Boots</Name>
+<Description>A pait of boots made of hide</Description>
+<GoldValue>5</GoldValue>
+<Type>ARMOUR</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>BOOTS</SubType>
+<Damage>0</Damage>
+<AttackSpeed>0</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>3</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+<ItemDatabase>
+<ID>11</ID>
+<Name>Small Stick</Name>
+<Description>An improvised wand</Description>
+<GoldValue>10</GoldValue>
+<Type>WEAPON</Type>
+<LvlRequirement>0</LvlRequirement>
+<SubType>WAND</SubType>
+<Damage>1</Damage>
+<AttackSpeed>2</AttackSpeed>
+<TwoHanded>0</TwoHanded>
+<Reach>0</Reach>
+<Heavy>0</Heavy>
+<Defense>0</Defense>
+<HPRestore>0</HPRestore>
+<MPRestore>0</MPRestore>
+<Revives>0</Revives>
+<CureStatusEffect>0</CureStatusEffect>
+</ItemDatabase>
+</dataroot>

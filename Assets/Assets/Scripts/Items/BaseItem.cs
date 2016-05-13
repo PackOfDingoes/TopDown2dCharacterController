@@ -13,14 +13,6 @@ public class BaseItem
 	private int itemGoldValue;
 //	private Dictionary<string, int> itemRequirements = new Dictionary<string, int>();
 	private int itemLvlRequirement;
-	private int itemStrRequirement;
-//	BONUS STATS PROVIDED
-	private int itemBonusStr;
-	private int itemBonusDex;
-	private int itemBonusCon;
-	private int itemBonusInt;
-	private int itemBonusWis;
-	private int itemBonusCha;
 //	REQUIREMENTS
 	public enum ItemTypes
 	{
@@ -38,13 +30,6 @@ public class BaseItem
         itemID = int.Parse(itemsDictionary["ItemID"]);
         itemGoldValue = int.Parse(itemsDictionary["ItemGoldValue"]);
         itemLvlRequirement = int.Parse(itemsDictionary["ItemLvlReq"]);
-        itemStrRequirement = int.Parse(itemsDictionary["ItemStrReq"]);
-        itemBonusStr = int.Parse(itemsDictionary["ItemBonusStr"]);
-        itemBonusStr = int.Parse(itemsDictionary["ItemBonusDex"]);
-        itemBonusStr = int.Parse(itemsDictionary["ItemBonusCon"]);
-        itemBonusStr = int.Parse(itemsDictionary["ItemBonusInt"]);
-        itemBonusStr = int.Parse(itemsDictionary["ItemBonusWis"]);
-        itemBonusStr = int.Parse(itemsDictionary["ItemBonusCha"]);
         itemID = int.Parse(itemsDictionary["ItemID"]);
         itemType = (ItemTypes)System.Enum.Parse(typeof(BaseItem.ItemTypes), itemsDictionary["ItemType"].ToString());
     }
@@ -75,42 +60,6 @@ public class BaseItem
 	{
 		get{return itemLvlRequirement;}
 		set{itemLvlRequirement = value;}
-	}
-	public int ItemStrRequirement
-	{
-		get{return itemStrRequirement;}
-		set{itemStrRequirement = value;}
-	}
-//	BONUS STATS
-	public int ItemBonusStr
-	{
-		get{return itemBonusStr;}
-		set{itemBonusStr = value;}
-	}
-	public int ItemBonusDex
-	{
-		get{return itemBonusDex;}
-		set{itemBonusDex = value;}
-	}
-	public int ItemBonusCon
-	{
-		get{return itemBonusCon;}
-		set{itemBonusCon = value;}
-	}
-	public int ItemBonusInt
-	{
-		get{return itemBonusInt;}
-		set{itemBonusInt = value;}
-	}
-	public int ItemBonusWis
-	{
-		get{return itemBonusWis;}
-		set{itemBonusWis = value;}
-	}
-	public int ItemBonusCha
-	{
-		get{return itemBonusCha;}
-		set{itemBonusCha = value;}
 	}
 //	ITEM TYPES
 	public ItemTypes ItemType

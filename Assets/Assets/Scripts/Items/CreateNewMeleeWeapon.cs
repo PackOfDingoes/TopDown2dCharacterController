@@ -16,7 +16,7 @@ public class CreateNewMeleeWeapon : MonoBehaviour
 
     public void CreateMeleeWeapon()
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 1; i++)
         {
             newMeleeWeapon.Add(new BaseMeleeWeapon());
         }
@@ -35,15 +35,6 @@ public class CreateNewMeleeWeapon : MonoBehaviour
             newMeleeWeapon[i].ItemGoldValue = Random.Range(1, 5001);
             // make lvl req
             newMeleeWeapon[i].ItemLvlRequirement = Random.Range(1, 31);
-            // make str req
-            newMeleeWeapon[i].ItemStrRequirement = Random.Range(0, 51);
-            // make bonus stats (str, dex, con, int, wis, cha)
-            newMeleeWeapon[i].ItemBonusStr = Random.Range(0, 10);
-            newMeleeWeapon[i].ItemBonusDex = Random.Range(0, 10);
-            newMeleeWeapon[i].ItemBonusCon = Random.Range(0, 10);
-            newMeleeWeapon[i].ItemBonusInt = Random.Range(0, 10);
-            newMeleeWeapon[i].ItemBonusWis = Random.Range(0, 10);
-            newMeleeWeapon[i].ItemBonusCha = Random.Range(0, 10);
             // make damage
             newMeleeWeapon[i].WeaponDamage = Random.Range(0, 101);
             // make attack speed
@@ -134,13 +125,6 @@ public class CreateNewMeleeWeapon : MonoBehaviour
             Debug.Log(newMeleeWeapon[i].MeleeWeaponType);
             Debug.Log(newMeleeWeapon[i].WeaponDamageType);
             Debug.Log("Lvl req: " + newMeleeWeapon[i].ItemLvlRequirement);
-            Debug.Log("Str req: " + newMeleeWeapon[i].ItemStrRequirement);
-            Debug.Log("Bonus Str: " + newMeleeWeapon[i].ItemBonusStr);
-            Debug.Log("Bonus Dex: " + newMeleeWeapon[i].ItemBonusDex);
-            Debug.Log("Bonus Con: " + newMeleeWeapon[i].ItemBonusCon);
-            Debug.Log("Bonus Int: " + newMeleeWeapon[i].ItemBonusInt);
-            Debug.Log("Bonus Wis: " + newMeleeWeapon[i].ItemBonusWis);
-            Debug.Log("Bonus Cha: " + newMeleeWeapon[i].ItemBonusCha);
             Debug.Log("Damage: " + newMeleeWeapon[i].WeaponDamage);
             Debug.Log("Atk Spd: " + newMeleeWeapon[i].WeaponAttackSpeed);
             Debug.Log("Two Handed:" + newMeleeWeapon[i].WeaponIsTwoHanded);

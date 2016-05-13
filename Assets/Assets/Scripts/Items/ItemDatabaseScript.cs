@@ -36,14 +36,14 @@ public class ItemDatabaseScript : MonoBehaviour
             {
                 switch(content.Name)
                 {
-                    case "ItemID":
-                        inventoryDictionary.Add("ItemID", content.InnerText);
+                    case "ID":
+                        inventoryDictionary.Add("ID", content.InnerText);
                         break;
-                    case "ItemName":
-                        inventoryDictionary.Add("ItemName", content.InnerText);
+                    case "Name":
+                        inventoryDictionary.Add("Name", content.InnerText);
                         break;
-                    case "ItemType":
-                        inventoryDictionary.Add("ItemType", content.InnerText);
+                    case "Type":
+                        inventoryDictionary.Add("Type", content.InnerText);
                         break;
                 }
             }
